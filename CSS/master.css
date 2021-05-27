@@ -1,0 +1,232 @@
+/* 
+    STYLER GUIDE:
+    
+    0.RESET
+    1.LAYOUT
+    2.GENEREIC ITEMS
+    3.PARTS OF WEB
+    4.LIST
+    5.FORM
+    6.ANIMATIONS
+
+-----------------------------------------------
+    COLORS:
+        color 1 => #2c3e50;
+        color 2 => #34495e;
+        color 3 => #3498db;
+        color 4 => #fff;
+
+*/ 
+
+/* 0.RESET */
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. LAYOUT */
+
+body{
+    text-align: center;
+    font: 300 20px/1.7 'Roboto';
+}
+
+/* 2. GENEREIC ITEMS */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background: url(../Images/dummy-header.jpg) no-repeat center top;
+    background-size: cover;
+    ;
+}
+
+.navbar{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    max-width: 100%;
+    background: #2c3e50;
+    font-size: 20px;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 0px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+p{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+/* 3. PARTS OF WEB */
+
+.content{
+    padding: 80px 0;
+}
+
+.who{
+    background-color: #384b5e;
+    color: #fff;
+}
+
+.who p{
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.services{
+    background: #465666;
+    color: #fff;
+}
+
+.list-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-services figure{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.list-services figure:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 0;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+.list-services li{
+    padding: 0 30px;
+}
+
+.list-services figcaption{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: -40px;
+}
+
+.list-services img{
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+}
+
+.rates{
+    background: url(../Images/dummy-tarifas.jpg) no-repeat center top;
+    background-size: cover;
+    color: #fff;
+    text-align: left;
+}
+
+.rates p{
+    max-width: 300px;
+}
+
+.contain{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn{
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.localization{
+    color: #34495e;
+    padding-bottom: 0px;
+}
+
+.localization .map img{ 
+    max-width: 100%;
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    background-size: cover;
+    height: 30px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
